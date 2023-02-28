@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: bisque;
+  width: 100% !important;
+}
+
+body {
+
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+.card-title {
+  font-weight:500;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.menu {
+  background-color: blanchedalmond !important;
+  padding: 2%;
+  margin-left: 2%;
+  color: brown
+}
+.menu:hover {
+  color: rgb(93, 21, 21);
+}
+
+.cards-grid {
+  display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+grid-auto-rows: auto;
+
+grid-gap: 1rem;
+
+}
+.title, .descr, .cards-grid {
+  font-family: 'Tinos', serif;
+}
+
+.descr {
+  font-size: 17px;
+}
+
+.card-img-top {
+  max-width: 100% !important;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.card-ex {
+  max-width: 100%;
+}
